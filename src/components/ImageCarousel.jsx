@@ -47,9 +47,9 @@ const ImageCarousel = () => {
           }}
           className="!pb-16"
         >
-          {featuredImages.map((image, index) => (
+          {featuredImages.map((image) => (
             <SwiperSlide key={image.id}>
-              <div key={index} className="relative group overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500">
+              <div className="relative group overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500">
                 <img
                   src={image.src}
                   alt={image.title}
